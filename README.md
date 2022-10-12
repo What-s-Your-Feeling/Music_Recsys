@@ -5,11 +5,12 @@
 
 ## Data collection
 |Dataset|Description|Source|
+|-|-|-|
 |온라인 구어체 말뭉치|온라인 플랫폼(게시판, 댓글 등)에서 구어체 위주의 텍스트 데이터|https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=625|
 |감성 대화 말뭉치|일반인 1,500명을 대상으로 하여 음성 15,700문장 및 코퍼스 27만 문장 구축|https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=86|
 |Melon Playlist Continuation|멜론 음악 70만건에 대한 곡정보|https://arena.kakao.com/c/8|
 
-## Further infos
+## Further infomation
 
 ### Architecture Brief
 KLUE-RoBERTa-Large모델에 가사, 일상어, 감성어를 Masked LM 기반 pre-train을 수행했습니다. Task 데이터셋의 크기가 작고 pre-train 데이터셋과 유사하기 때문에 backbone model을 freeze하여 bottleneck feature를 추출한 뒤 감성어 데이터셋으로 FC layer만 학습시키는 finetuning과정을 거쳤습니다.
