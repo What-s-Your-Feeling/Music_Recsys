@@ -1,7 +1,7 @@
 # 감성분석에 따른 음악 추천 알고리즘
 
 ## Architecture Brief
-<img src="https://user-images.githubusercontent.com/54973366/195487645-10e84d5a-785c-4cf1-ae27-0fb7b1644cf0.jpg" width="800" height="667"/>
+<img src="https://github.com/What-s-Your-Feeling/Music_Recsys/blob/main/readme_image/architecture.jpeg" width="800" height="667"/>
 
 ## Emotion_classification
 - 입력 값으로 받은 사용자의 문장을 6개의 라벨(분노/긴장/슬픔/평화/기쁨/중립)을 기준으로 Multi-class sentiment classification을 통해 감정을 분류합니다.  
