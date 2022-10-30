@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import numpy as np
 import streamlit as st
-#import streamlit.components.v1 as components
+import streamlit.components.v1 as components
 
 from streamlit_chat import message
 from transformers import AutoTokenizer, pipeline, AutoModelForSequenceClassification
@@ -113,3 +113,7 @@ if text:
         # vectors = np.load('recsys_data/2015mel.npy')
 
         cos_sim(vectors, emotion, data)
+
+HtmlFile = open("index.html")
+source_code = HtmlFile.read() 
+components.html(source_code)
