@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>카카오톡 친구에게 감성 노래 추천하기</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('dcd1dcfdc2d578f565e89c78efc2f6f9');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '감성기반 노래추천 웹사이트에 방문하기',
+        description: '아래 버튼을 눌러 웹사이트에 방문해보세요.',
+        imageUrl:
+          'https://avatars.githubusercontent.com/u/111737687?s=200&v=4',
+        link: {
+          mobileWebUrl: 'https://jungyongji-streamlit-serving-serving-lqevt7.streamlitapp.com',
+          webUrl: 'https://jungyongji-streamlit-serving-serving-lqevt7.streamlitapp.com',
+        },
+      },
+      social: {
+        likeCount: 99999, //99999가 최대입니다
+        commentCount: 99999, //99999가 최대입니다
+        sharedCount: 99999, //99999가 최대입니다
+      },
+      buttons: [
+        {
+          title: '지금 바로 접속하기',
+          link: {
+            mobileWebUrl: 'https://jungyongji-streamlit-serving-serving-lqevt7.streamlitapp.com',
+            webUrl: 'https://jungyongji-streamlit-serving-serving-lqevt7.streamlitapp.com',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+  </body>
+</html>
