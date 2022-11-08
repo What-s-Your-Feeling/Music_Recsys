@@ -3,6 +3,7 @@ numpy==1.22.4
 selenium==4.4.3
 streamlit==1.4.0
 streamlit-chat==0.0.2.1
-transformers==4.23.1
+transformers==4.24.0
 webdriver-manager==3.8.3
 torch==1.11.0
+tensorflow==2.10.0
