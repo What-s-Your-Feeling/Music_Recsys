@@ -11,3 +11,6 @@
 
 ### Mel_data_EDA.ipynb
 - Mel Spectrogram EDA 파일입니다.
+
+### Data_Augmentation.ipynb
+- 감성어에 대한 데이터 증강 파일입니다.
