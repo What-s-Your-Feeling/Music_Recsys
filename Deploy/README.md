@@ -1,7 +1,7 @@
 # Serving of Music RecSys via Streamlit
 감정 기반 음악 추천시스템을 Streamlit으로 배포하기 위해 구축한 github repogitary
 
-[감정 기반 음악 추천시스템 링크](https://jungyongji-streamlit-serving-serving-lqevt7.streamlitapp.com/)
+[감정 기반 음악 추천시스템 링크](https://what-u-feeling.streamlit.app/)
 
 <br>
 
