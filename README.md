@@ -1,5 +1,7 @@
 # 감성분석에 따른 음악 추천 알고리즘
 
+- 해당 프로젝트의 모델인 Klue-RoBERTa-large의 pre-train과 fine-tuning는 TRC(TPU Reasearch Cloud)의 Cloud TPU 지원으로 진행되었습니다. 
+
 ## Architecture Brief
 <img src="https://github.com/What-s-Your-Feeling/Music_Recsys/blob/main/readme_image/architecture.jpeg" width="800" height="667"/>
 
